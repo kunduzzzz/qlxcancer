@@ -23,13 +23,13 @@ with st.sidebar:
     st.subheader("Tumor Characteristics")
     T = st.slider("T Stage", min_value=2, max_value=4, value=3, step=1,
                  help=" T2: Organ-confined, T3: Extracapsular extension, T4: Invasion of adjacent structures")
-    N = st.slider("N Stage", min_value=0, max_value=3, value=1, step=1,
+    N = st.slider("N Stage", min_value=0, max_value=1, value=1, step=1,
                  help="N0: No regional lymph node metastasis, N1: Regional lymph node metastasis")
     
     st.subheader("Laboratory Values")
-    PSA_density = st.slider("PSA Density (ng/mL/mL)", min_value=0.0, max_value=10.0, value=0.5, step=0.1,
+    PSA_density = st.slider("PSA Density (ng/mL/mL)", min_value=0.0, max_value=50.0, value=0.5, step=0.1,
                           help="Serum PSA divided by prostate volume")
-    ALP = st.slider("ALP (U/L)", min_value=0, max_value=1000, value=100, step=10,
+    ALP = st.slider("ALP (U/L)", min_value=0, max_value=1100, value=100, step=1,
                   help="Alkaline phosphatase level")
     
     st.subheader("Performance Status")
