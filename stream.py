@@ -7,7 +7,7 @@ import os
 st.set_page_config(page_title="Prostate Cancer Bone Metastasis Risk Calculator", layout="wide")
 st.title("Prostate Cancer Bone Metastasis Risk Calculator")
 st.markdown("""
-**Clinical Utility**: This tool predicts the risk of bone metastasis in newly diagnosed prostate cancer patients using clinicopathological parameters.
+**Clinical Utility**:This tool predicts the risk of bone metastasis in newly diagnosed prostate cancer patients using clinicopathological parameters.
 """)
 
 # Load model
@@ -27,9 +27,9 @@ with st.sidebar:
                  help="N0: No regional lymph node metastasis, N1: Regional lymph node metastasis")
     
     st.subheader("Laboratory Values")
-    PSA_density = st.slider("PSA Density (ng/mL/mL)", min_value=0.0, max_value=50.0, value=0.5, step=0.1,
+    PSA_density = st.slider("PSA Density (ng/mL/mL)", min_value=0.0, max_value=50.0, value=0.1, step=0.1,
                           help="Serum PSA divided by prostate volume")
-    ALP = st.slider("ALP (U/L)", min_value=0, max_value=1100, value=100, step=1,
+    ALP = st.slider("ALP (U/L)", min_value=0, max_value=1100, value=100, step=0.5,
                   help="Alkaline phosphatase level")
     
     st.subheader("Performance Status")
