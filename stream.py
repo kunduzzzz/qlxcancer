@@ -7,7 +7,7 @@ import os
 st.set_page_config(page_title= "Bone Metastasis Risk Calculator", layout="wide")
 st.title("Bone Metastasis Risk Calculator")
 st.markdown("""
-**Clinical Utility**:This tool predicts the risk of bone metastasis in newly diagnosed prostate cancer patients.
+**Clinical Utility**:This tool predicts the risk of bone metastasis in prostate cancer patients.
 """)
 
 # Load model
