@@ -4,10 +4,10 @@ import pickle
 import os
 
 # Page configuration
-st.set_page_config(page_title="Prostate Cancer Bone Metastasis Risk Calculator", layout="wide")
-st.title("Prostate Cancer Bone Metastasis Risk Calculator")
+st.set_page_config(page_title= "Bone Metastasis Risk Calculator", layout="wide")
+st.title("Bone Metastasis Risk Calculator")
 st.markdown("""
-**Clinical Utility**:This tool predicts the risk of bone metastasis in newly diagnosed prostate cancer patients using clinicopathological parameters.
+**Clinical Utility**:This tool predicts the risk of bone metastasis in newly diagnosed prostate cancer patients.
 """)
 
 # Load model
